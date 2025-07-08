@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Explorer</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <!-- გამოყენებული ფონტები(ნებისმიერი)  -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <!-- გამოყენებული ფონტები(ნებისმიერი)  -->
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Space Explorer</h1>
+    <img src="/gatestva/gatestvaimages/burger.png" alt="Menu" id="burger" onclick="toggleMenu()">
+    <nav class="navbar">
+      <a href="#hero">Home</a>
+      <a href="#solar">Solar System</a>
+      <a href="#contact">Join Us</a>
+    </nav>
+
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Welcome to the Universe</h2>
+    <p id="spaceFact">Loading...</p>
+    <a href="#solar" class="cta-button">Explore Now</a>
+  </section>
+
+  <section id="solar" class="solar-preview">
+    <h2>Our Solar System</h2>
+    <img class="solar-image" src="/gatestva/gatestvaimages/milkyway.jpg" alt="Galaxy Image" />
+  </section>
+
+  <section id="contact">
+    <h2>Join Our Community</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="password">Password:</label>
+      <div class="password-container">
+        <input type="password" id="password" />
+        <button type="button" id="togglePassword">Show</button>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>Space Explorer</p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">⬆</button> 
+
+</body>
+</html>

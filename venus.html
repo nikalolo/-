@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planet Venus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url(gatestvaimages/space.jpg);
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #c3f4ff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .earth-container {
+      height: 250px;
+      width: 250px;
+      background: url("gatestvaimages/venus.jpg");
+      background-size: cover;
+      border-radius: 50%;
+      animation: earthRotate 30s linear infinite;
+    }
+
+    @keyframes earthRotate {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 400px 0;
+      }
+    }
+
+    .info {
+      max-width: 600px;
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .info ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Planet Venus</h1>
+
+  <div class="earth-container"></div>
+
+  <div class="info">
+    <p>Earth is the third planet from the Sun and the only known planet to support life. Its surface is 71% water, and it has a protective atmosphere rich in oxygen and nitrogen.</p>
+    
+    <h2>Basic Facts</h2>
+    <ul>
+      <li><strong>Diameter:</strong> 12,742 km</li>
+      <li><strong>Mass:</strong> 5.97 × 10²⁴ kg</li>
+      <li><strong>Distance from Sun:</strong> ~149.6 million km</li>
+      <li><strong>Day length:</strong> 24 hours</li>
+      <li><strong>Year length:</strong> 365.25 days</li>
+      <li><strong>Moon:</strong> 1 natural satellite</li>
+    </ul>
+  </div>
+</body>
+</html>

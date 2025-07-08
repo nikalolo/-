@@ -1,0 +1,294 @@
+body {
+  background-image: url("gatestvaimages/bachroundphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.blackhole-link {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 2;
+}
+
+.blackhole-img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.solar-system {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url("gatestvaimages/sun.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sun:hover {
+  box-shadow: 0 0 20px 8px rgba(255, 165, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mercury-orbit {
+  width: 160px;
+  height: 160px;
+}
+.mercury:hover {
+  box-shadow: 0 0 15px 5px rgba(169, 169, 169, 0.7);
+  transform: scale(1.1);
+}
+
+.venus-orbit {
+  width: 224px;
+  height: 224px;
+}
+.venus:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.earth-orbit {
+  width: 288px;
+  height: 288px;
+}
+.earth:hover {
+  box-shadow: 0 0 15px 5px rgba(0, 100, 255, 0.7);
+  transform: scale(1.1);
+}
+
+.mars-orbit {
+  width: 352px;
+  height: 352px;
+}
+.mars:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.jupiter-orbit {
+  width: 416px;
+  height: 416px;
+}
+.jupiter:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 153, 51, 0.7);
+  transform: scale(1.1);
+}
+
+.saturn-orbit {
+  width: 480px;
+  height: 480px;
+}
+.saturn:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 204, 102, 0.7);
+  transform: scale(1.1);
+}
+
+.uranus-orbit {
+  width: 544px;
+  height: 544px;
+}
+.uranus:hover {
+  box-shadow: 0 0 15px 5px rgba(173, 216, 230, 0.7);
+  transform: scale(1.1);
+}
+
+.neptune-orbit {
+  width: 608px;
+  height: 608px;
+}
+.neptune:hover {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.7);
+  transform: scale(1.1);
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+}
+
+.mercury {
+  width: 16px;
+  height: 16px;
+  background-image: url("/gatestva/gatestvaimages/mercury.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 160px;
+  animation: orbit 4s linear infinite;
+}
+
+.venus {
+  width: 24px;
+  height: 24px;
+  background-image: url("gatestvaimages/venus.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 224px;
+  animation: orbit 6s linear infinite;
+}
+
+.earth {
+  width: 32px;
+  height: 32px;
+  background-image: url("gatestvaimages/earth.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 288px;
+  animation: orbit 8s linear infinite;
+}
+
+.mars {
+  width: 24px;
+  height: 24px;
+  background-image: url("gatestvaimages/mars.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 352px;
+  animation: orbit 10s linear infinite;
+}
+
+.jupiter {
+  width: 48px;
+  height: 48px;
+  background-image: url("gatestvaimages/jupiter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 416px;
+  animation: orbit 12s linear infinite;
+}
+
+.saturn {
+  width: 64px;
+  height: 64px;
+  background-image: url("gatestvaimages/saturn1.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 480px;
+  animation: orbit 14s linear infinite;
+}
+
+.uranus {
+  width: 40px;
+  height: 40px;
+  background-image: url("gatestvaimages/uranus'.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 544px;
+  animation: orbit 16s linear infinite;
+}
+
+.neptune {
+  width: 32px;
+  height: 32px;
+  background-image: url("gatestvaimages/darkspot.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  --orbit-width: 608px;
+  animation: orbit 18s linear infinite;
+}
+
+/* Orbit animation */
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(calc(var(--orbit-width) / 2)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(calc(var(--orbit-width) / 2)) rotate(-360deg);
+  }
+}
+
+a.planet {
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* (1024px;768px;480px;320px) */
+@media (max-width: 1024px) {
+  .solar-system {
+    transform: scale(0.9);
+  }
+
+  .blackhole-img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .solar-system {
+    transform: scale(0.75);
+  }
+
+  .blackhole-link {
+    top: 30px;
+    left: 30px;
+  }
+
+  .blackhole-img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solar-system {
+    transform: scale(0.55);
+  }
+
+  .blackhole-link {
+    top: 20px;
+    left: 20px;
+  }
+
+  .blackhole-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .solar-system {
+    transform: scale(0.45);
+  }
+
+  .blackhole-img {
+    width: 90px;
+  }
+}
